@@ -4,9 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Count Up Timer</title>
+
+<!-- Include Font File -->
 <style>
+  @font-face {
+    font-family: 'Big Burbank Condensed';
+    src: url('https://github.com/cloudyincs/BigBurbankFontHost/raw/main/BurbankBigCondensed-Bold.otf') format('opentype'); /* Replace URL_TO_FONT_FILE with the actual URL */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* Apply Font to Body */
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Big Burbank Condensed', sans-serif;
     background-color: black;
     color: white;
     text-align: center;
@@ -22,6 +32,7 @@
 </head>
 <body>
 <div id="timer"></div>
+
 <script>
   var startTime = new Date().getTime() - ((43 * 3600 + 45 * 60 + 20) * 1000);
 
@@ -38,5 +49,6 @@
 
   setInterval(updateTimer, 1000);
 </script>
+
 </body>
 </html>
